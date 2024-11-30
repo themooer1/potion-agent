@@ -1,0 +1,13 @@
+mkdir("/tmp/autoNZwaRs", 0700)          = 0
+pipe2([3, 4], 0)                        = 0
+mount("automount", "/tmp/autoNZwaRs", "autofs", MS_MGC_VAL, "fd=4,pgrp=25419,minproto=3,maxpr"...) = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/tmp/autoNZwaRs", {st_mode=S_IFDIR|0755, st_size=0, ...}, 0) = 0
+openat(AT_FDCWD, "/dev/autofs", O_RDONLY|O_CLOEXEC) = 4
+ioctl(4, AUTOFS_DEV_IOCTL_VERSION, 0x7ffebe3a1890) = 0
+ioctl(4, AUTOFS_DEV_IOCTL_OPENMOUNT, 0x600001d9f610) = 0
+ioctl(4, AUTOFS_DEV_IOCTL_CATATONIC, 0x7ffebe3a18b0) = 0
+ioctl(4, AUTOFS_DEV_IOCTL_PROTOVER, 0x7ffebe3a18a0) = 0
+ioctl(4, AUTOFS_DEV_IOCTL_PROTOSUBVER, 0x7ffebe3a18a0) = 0
+close(5)                                = 0
+umount2("/tmp/autoNZwaRs", 0)           = 0
